@@ -2,8 +2,6 @@ import { LightningElement, track, wire } from 'lwc';
 import { CurrentPageReference } from 'lightning/navigation';
 import {registerListener, unregisterAllListeners} from 'c/pubsub';
 import eplStaticResource from '@salesforce/resourceUrl/epl_logos';
-import { getRecord } from 'lightning/uiRecordApi';
-import refreshApex from '@salesforce/apex';
 
 export default class ClubDetail extends LightningElement {        
     @track club;    
