@@ -1,0 +1,46 @@
+.banner{    
+    height: 10rem;        
+    background-color: var(--clubBgColor, '#cccccc');
+}
+
+.frame{    
+    position: relative;
+    margin: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);  
+    width: 8rem;
+    height: 8rem;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+img{
+    position: absolute;
+    max-height: 80%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.bannerTextContainer{
+    padding: 1.8rem 0 1.8rem 1.8rem;
+    margin: auto;    
+}
+
+.bannerTitle {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.bannerText{
+    color: #ffffff;    
+    font-weight: 900;
+    line-height: 1.4rem;
+}
+
+.bannerText a{
+    color: #ffffff;
+}

@@ -1,0 +1,20 @@
+<template>    
+    <div class = "slds-col smallSlot position">
+        {club.Position__c}
+    </div>
+    <div class = "slds-col largeSlot boldFont" onclick = {handleTileClick}>
+        <div class = "imgContainer">
+            <img src={url} alt={club.Club__r.Logo_name__c}/>
+        </div> 
+        {club.Name}
+    </div>
+    <div class = "slds-col smallSlot">
+        {club.Games_played__c}
+    </div>
+    <div class = "slds-col smallSlot">
+        {club.Goal_difference__c}
+    </div>
+    <div class = "slds-col smallSlot boldFont">
+        {club.Points__c}
+    </div>    
+</template>

@@ -1,0 +1,22 @@
+.slds-col {
+    background-color: #f5f5f5;
+    padding: 5px;
+}
+
+.boldFont {
+    font-weight: bold;
+}
+
+.smallSlot {    
+    width : 10%;    
+}
+
+.largeSlot{
+    padding-left: 20px;    
+    width : 60%;    
+}
+
+.position {
+    text-align: center;
+    width : 10%;    
+}

@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title = "Standings" icon-name = "custom:custom11" >
+        <div class = "slds-p-horizontal_small">            
+            <div class = "slds-grid slds-wrap">
+                <div class = "slds-col position">
+                    Pos
+                </div>
+                <div class = "slds-col largeSlot">
+                    Club
+                </div>
+                <div class = "slds-col smallSlot">
+                    Pl
+                </div>
+                <div class = "slds-col smallSlot">
+                    Gd
+                </div>
+                <div class = "slds-col smallSlot">
+                    Pts
+                </div>
+                <template for:each={clubs} for:item="club">                                         
+                    <c-club-row key = {club.Id} club = {club}></c-club-row>                                                                                  
+                </template>                 
+            </div>
+        </div>
+    </lightning-card>    
+</template>

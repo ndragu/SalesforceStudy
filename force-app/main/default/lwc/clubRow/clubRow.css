@@ -1,0 +1,50 @@
+:host{
+    display: contents;
+}
+
+.slds-col {
+    background-color: #ffffff;
+    padding: 5px;
+    height: 2rem;
+    border-bottom: 1px solid #008f30;
+}
+
+.boldFont {
+    font-weight: bold;
+}
+
+.smallSlot {
+    width : 10%;    
+}
+
+.largeSlot{
+    width : 60%;
+    transition: border 0.5s, background-color 0.5s;    
+}
+
+.largeSlot:hover{
+    background-color: #96ff005c;
+    cursor:pointer;
+}
+
+.rowDivider {
+    border-bottom: 1px solid #000;
+}
+
+.position {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #00b33c;
+}
+
+.imgContainer { 
+    float: left;   
+    padding: 0 5px 0 5px;    
+    height: 1.2rem;
+    width: 2rem;
+}
+
+.imgContainer img{
+    width: 0.8rem;
+}
