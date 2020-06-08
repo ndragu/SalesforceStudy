@@ -1,0 +1,20 @@
+.slds-col{
+    height: 3.3rem;    
+    display: inline-block;
+}
+
+.slds-col a img{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 3rem;
+}
+
+.imgContainer{
+    transition: transform 0.4s;
+    -webkit-transition: -webkit-transform 0.4s;    
+}
+
+.imgContainer:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}

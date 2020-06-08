@@ -1,0 +1,11 @@
+<template>
+    <template if:true = {club}>
+        <div class = "slds-col">
+            <div class = "imgContainer">
+                <a href = {club.Club__r.website__c} target = "_blank">
+                    <img src={url} alt={club.Club__r.Logo_name__c} title={club.Club__r.Logo_name__c}/>
+                </a>  
+            </div>            
+        </div>        
+    </template>    
+</template>

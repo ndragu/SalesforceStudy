@@ -1,0 +1,9 @@
+<template>    
+    <lightning-card>
+        <div class = "slds-grid slds-wrap">
+            <template for:each={clubs} for:item="club">
+                <c-club-logo-to-website key = {club.Id} club = {club}></c-club-logo-to-website>
+            </template>            
+        </div>        
+    </lightning-card>            
+</template>
