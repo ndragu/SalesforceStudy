@@ -6,34 +6,30 @@
             </template>
             <template if:true = {club}>             
                 <div class = "slds-grid slds-wrap slds-gutters">
-                    <div class = "slds-col slds-size_1-of-2 slds-small-size_2-of-2 slds-medium-size_1-of-2">                        
-                        <div class = "slds-grid slds-wrap">                            
-                            <div class = "banner slds-col slds-size_1-of-4 slds-small-size_2-of-2 slds-medium-size_1-of-4" >                            
+                    <div class = "slds-col slds-small-size_2-of-2 slds-medium-size_2-of-2 slds-large-size_1-of-2">                        
+                        <div class = "slds-grid slds-wrap bannerBg">                            
+                            <div class = "slds-col slds-small-size_2-of-2 slds-medium-size_1-of-3 bannerLogoContainer" >                            
                                 <div class = "frame">
                                     <a href = {club.Club__r.website__c} target = "_blank">
                                         <img src={url} alt={club.Club__r.Logo_name__c}/>
                                     </a>                                    
                                 </div>
                             </div>
-                            <div class = "banner slds-col slds-size_3-of-4 slds-small-size_2-of-2 slds-medium-size_3-of-4">
+                            <div class = "slds-col slds-small-size_2-of-2 slds-medium-size_2-of-3">
                                 <div class = "bannerTextContainer">
                                     <div class="bannerTitle">
                                         {club.Name}
                                     </div>
                                     <div class="bannerText">
-                                        Position: {club.Position__c}
-                                    </div>
-                                    <div class="bannerText">
-                                        Website: <a href = {club.Club__r.website__c} target = "_blank">{club.Club__r.website__c}</a>
-                                    </div>
-                                    <div class="bannerText">
+                                        Position: {club.Position__c}<br>
+                                        Website: <a href = {club.Club__r.website__c} target = "_blank">{club.Club__r.website__c}</a><br>
                                         Stadium: {club.Club__r.stadiumName__c}
-                                    </div>                                  
+                                    </div>                                                                                                        
                                 </div>                                
                             </div>                        
                         </div>                        
                     </div>
-                    <div class = "slds-col slds-size_1-of-2 slds-small-size_2-of-2 slds-medium-size_1-of-2">
+                    <div class = "slds-col slds-small-size_2-of-2 slds-medium-size_2-of-2 slds-large-size_1-of-2">
                         <lightning-map 
                             map-markers = {mapMarkers}
                             zoom-level = "17"
